@@ -8,6 +8,9 @@ from collections import defaultdict
 from conf import ModelPath
 from utils.handle import TextHandle
 
+from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.feature_extraction.text import TfidfVectorizer
+from scipy.spatial.distance import cosine
 
 class SentenceParse(ModelPath):
     def __init__(self):
