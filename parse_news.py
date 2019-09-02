@@ -224,6 +224,8 @@ class Parse(object):
                     continue
         return ners
 
+    def distance(v1, v2): return cosine(v1, v2)
+
     # changed #
     def get_content(self, ners, parse, sentence):
         """获取 说 的内容，修复了说的内容在前面时的一些小bug,并且考虑了句子的相似性 """
